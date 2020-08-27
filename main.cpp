@@ -7,5 +7,10 @@ int main() {
 
 	testPairToNumber(BLACK, ORANGE, 12);
 	testPairToNumber(VIOLET, SLATE, 25);
+
+	std::cout << "------------ Printing Manual -------------" << std::endl;
+
+	Utility::PrintManual();
+
 	return 0;
 }
