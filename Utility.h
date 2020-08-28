@@ -18,10 +18,10 @@ namespace Utility
 
 	void PrintManual()
 	{
-		int colorCodes = numberOfMajorColors * numberOfMinorColors;
-		for(int i = 1; i<=colorCodes; i++)
+		auto const colorCodes = numberOfMajorColors * numberOfMinorColors;
+		for(auto i = 1; i<=colorCodes; i++)
 		{
-			ColorPair colorPair = GetColorFromPairNumber(i);
+			auto colorPair = GetColorFromPairNumber(i);
 			std::cout << "Color code: " << i << " " << colorPair.ToString() << std::endl;
 		}
 	}
